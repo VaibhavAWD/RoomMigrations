@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RoomMigrations</string>
+
+    <string name="error_loading_contacts">Error occurred while loading contacts</string>
+    <string name="all_contacts_deleted">All contacts were deleted</string>
+    <string name="error_deleting_all_contacts">Failed to delete all contacts</string>
 </resources>
