@@ -4,4 +4,9 @@
     <string name="error_loading_contacts">Error occurred while loading contacts</string>
     <string name="all_contacts_deleted">All contacts were deleted</string>
     <string name="error_deleting_all_contacts">Failed to delete all contacts</string>
+    <string name="contact_saved">Contact saved</string>
+    <string name="error_empty_name">Please enter Name</string>
+    <string name="error_empty_mobile">Please enter Mobile Number</string>
+    <string name="error_invalid_mobile">Please enter valid Mobile Number</string>
+    <string name="error_save_contact">Failed to save contact</string>
 </resources>
