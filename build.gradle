@@ -26,3 +26,11 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+ext {
+    // architecture components
+    room_version = "2.2.3"
+
+    // testing
+    truth_version = "0.44"
+}
