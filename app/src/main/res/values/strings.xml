@@ -9,4 +9,6 @@
     <string name="error_empty_mobile">Please enter Mobile Number</string>
     <string name="error_invalid_mobile">Please enter valid Mobile Number</string>
     <string name="error_save_contact">Failed to save contact</string>
+    <string name="deleted_contact">Contact was deleted</string>
+    <string name="error_delete_contact">Failed to delete contact</string>
 </resources>
