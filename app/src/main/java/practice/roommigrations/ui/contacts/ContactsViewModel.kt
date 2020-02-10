@@ -28,6 +28,9 @@ class ContactsViewModel(private val repository: ContactsRepository) : ViewModel(
     private val _addNewContactEvent = MutableLiveData<Event<Unit>>()
     val addNewContactEvent: LiveData<Event<Unit>> = _addNewContactEvent
 
+    private val _openContactEvent = MutableLiveData<Event<String>>()
+    val openContactEvent: LiveData<Event<String>> = _openContactEvent
+
     fun loadContacts() {
         _dataLoading.value = true
         viewModelScope.launch {
@@ -62,6 +65,10 @@ class ContactsViewModel(private val repository: ContactsRepository) : ViewModel(
 
     fun addNewContact() {
         _addNewContactEvent.value = Event(Unit)
+    }
+
+    fun openContact(contactId: String) {
+        _openContactEvent.value = Event(contactId)
     }
 
 }

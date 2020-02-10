@@ -178,4 +178,13 @@ class ContactsViewModelTest {
         assertLiveDataEventTriggered(contactsViewModel.addNewContactEvent, Unit)
     }
 
+    @Test
+    fun openContact_setsEvent() {
+        // WHEN - opening contact
+        contactsViewModel.openContact(testContact1.id)
+
+        // THEN - verify that open contact event is triggered
+        assertLiveDataEventTriggered(contactsViewModel.openContactEvent, testContact1.id)
+    }
+
 }
